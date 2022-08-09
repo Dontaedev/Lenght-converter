@@ -17,6 +17,8 @@ function myResult(){
     inputTypeValue = inputType.value;
     resultTypeValue = resultType.value;
 
+                    //        METER
+
     if(inputTypeValue === "meter" &&  resultTypeValue === "kilometer"){
         
         result.value = Number(input.value) * 0.001;
@@ -25,12 +27,17 @@ function myResult(){
 
         result.value = Number(input.value) * 100;
 
+    }else if(inputTypeValue === "meter" &&  resultTypeValue === "millimeter"){
+
+        result.value = Number(input.value) * 1000;
+
     }else if(inputTypeValue === "meter" &&  resultTypeValue === "meter"){
 
         result.value = Number(input.value);
+    
     }
-    
-    
+
+                    //      KILOMETER
     
     if(inputTypeValue === "kilometer" &&  resultTypeValue === "meter"){
         
@@ -43,9 +50,14 @@ function myResult(){
     }else if(inputTypeValue === "kilometer" &&  resultTypeValue === "kilometer"){
 
         result.value = Number(input.value);
+
+    }else if(inputTypeValue === "kilometer" &&  resultTypeValue === "millimeter"){
+
+        result.value = Number(input.value) * 1000000;
+
     }
 
-
+                //              CENTIMETER
         
     if(inputTypeValue === "centimeter" &&  resultTypeValue === "meter"){
         
@@ -58,24 +70,32 @@ function myResult(){
     }else if(inputTypeValue === "centimeter" &&  resultTypeValue === "centimeter"){
 
         result.value = Number(input.value);
+
+    }else if(inputTypeValue === "centimeter" &&  resultTypeValue === "millimeter"){
+
+        result.value = Number(input.value) * 10;
+
     }
-
-
-                            // WORKING ON THE MILLIMETER CONVERSION
+                           
     
-    
-    // if(inputTypeValue === "millimeter" &&  resultTypeValue === "meter"){
+                            //      MILLIMETER
+
+    if(inputTypeValue === "millimeter" &&  resultTypeValue === "meter"){
         
-    //     result.value = Number(input.value) * 0.001;
+        result.value = Number(input.value) * 0.001;
     
-    // }else if(inputTypeValue === "millimeter" &&  resultTypeValue === "kilometer"){
+    }else if(inputTypeValue === "millimeter" &&  resultTypeValue === "kilometer"){
 
-    //     result.value = Number(input.value) * 0.00001;
+        result.value = Number(input.value) * 0.000001;
 
-    // }else if(inputTypeValue === "millimeter" &&  resultTypeValue === "centimeter"){
+    }else if(inputTypeValue === "millimeter" &&  resultTypeValue === "centimeter"){
 
-    //     result.value = Number(input.value);
-    // }
+        result.value = Number(input.value) * 0.1;
+
+    }else if(inputTypeValue === "millimeter" &&  resultTypeValue === "millimeter"){
+
+        result.value = Number(input.value);
+    }
 
 }
 
