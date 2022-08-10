@@ -12,9 +12,18 @@
     <div class="converter-container">
         <div class="c-title">
             <h1 class="title">
-                Length Converter
+                Converter
             </h1>
         </div>    
+
+        <div class="elements-holder">
+            <select name="" id="converterType">
+                <option id="c-one" class="converter-options" value="length">Length</option>
+                <option id="c-two" class="converter-options" value="weight">Weight</option>
+                <option id="c-three" class="converter-options" value="time">Time</option>
+
+            </select>
+        </div>
 
         <div class="text">
             <input type="text" placeholder="Input" id="input">
@@ -27,20 +36,20 @@
         <div class="option-holder">
             <div class="input-holder">
                 <select name="" id="inputType">
-                    <option value="meter">Meter</option>
-                    <option value="kilometer">Kilometer</option>
-                    <option value="centimeter">Centimeter</option>
-                    <option value="millimeter">Millimeter</option>
+                    <option id="inputOptionOne" value="meter">Meter</option>
+                    <option id="inputOptionTwo" value="kilometer">Kilometer</option>
+                    <option id="inputOptionThree" value="centimeter">Centimeter</option>
+                    <option id="inputOptionFour" value="millimeter">Millimeter</option>
                 </select>
     
             </div>
 
             <div class="result-holder">
                 <select name="" id="resultType">
-                    <option value="meter">Meter</option>
-                    <option value="kilometer">Kilometer</option>
-                    <option value="centimeter">Centimeter</option>
-                    <option value="millimeter">Millimeter</option>
+                    <option id="resultOptionOne" value="meter">Meter</option>
+                    <option id="resultOptionTwo" value="kilometer">Kilometer</option>
+                    <option id="resultOptionThree" value="centimeter">Centimeter</option>
+                    <option id="resultOptionFour" value="millimeter">Millimeter</option>
                 </select>
             </div>
 
@@ -50,6 +59,10 @@
     </div>
     
 
-<script src="/src/index.js"></script>
+<script src="/src/control.js"></script>
+<script src="/src/length.js"></script>
+<!-- <script src="/src/time.js"></script>
+<script src="/src/weight.js"></script> -->
+
 </body>
 </html>

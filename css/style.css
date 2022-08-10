@@ -19,6 +19,19 @@
     font-size: 30px;
 }
 
+.elements-holder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.elements-holder select {
+    padding: 10px 30px;
+}
+
+
+
 .text {
     
     display: flex;
